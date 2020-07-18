@@ -8,6 +8,8 @@ public class Generator {
     {
         Random r = new Random();
         double randomValue = rangeMin + (rangeMax - rangeMin) * r.nextDouble();
+        randomValue = Math.round(randomValue * 100);
+        randomValue = randomValue/100;
         return randomValue;
     }
 }

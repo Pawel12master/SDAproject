@@ -14,12 +14,11 @@
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost:3306/ProjektSDA?createDatabaseIfNotExist=true&amp;serverTimezone=UTC</property>
         <property name="connection.username">root</property>
-        <property name="connection.password">!Sto4CZWARTA!</property>
-        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="connection.password">!Sto4CZWARTA</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
         <property name="hibernate.connection.autocommit">true</property>
         <mapping class="com.iot.model.Device"/>
-        <mapping class="com.iot.model.MeteringValues"/>
 
 
     </session-factory>
